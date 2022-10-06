@@ -1,10 +1,10 @@
 :root {
   @if $os == "windows" {
-    $ui-font: "\"阿里巴巴普惠体 2.0\"", "\"微软雅黑\"" !global;
-    $heading-Chinese-font: "华文黑体" !global;
-    $chapter-Chinese-font: "华文黑体" !global;
-    $sub-chapter-Chinese-font: "华文楷体" !global;
-    $sub-sub-chapter-Chinese-font: "华文仿宋" !global;
+    $ui-font: "Source Han Serif SC VF" !global;
+    $heading-Chinese-font: "Source Han Serif SC VF" !global;
+    $chapter-Chinese-font: "Source Han Serif SC VF" !global;
+    $sub-chapter-Chinese-font: "Source Han Serif SC VF" !global;
+    $sub-sub-chapter-Chinese-font: "Source Han Serif SC VF" !global;
   } @else if $os == "macos" {
     $ui-font: "\"苹方-简\"" !global;
     $heading-Chinese-font: "华文黑体Bold" !global;
@@ -23,8 +23,8 @@
 
   /* 基准字体 */
   /* 备选：Times, "Times New Roman" */
-  --base-Latin-font: "Latin Modern Roman", "Latin Modern Roman 10";
-  --base-Chinese-font: "宋体-简", "华文宋体", "Noto Serif CJK SC";
+  --base-Latin-font: "Heisei Mincho Std", "Latin Modern Roman", "Latin Modern Roman 10";
+  --base-Chinese-font: "Source Han Serif SC VF", "Source Han Serif TC VF", "宋体-简", "华文宋体", "Noto Serif CJK SC";
   --base-font-size: 9.5pt;
 
   /* 引言字体 */
@@ -34,7 +34,7 @@
   --quote-font-size: 10pt;
 
   /* 代码字体（代码中的中文会调用 ui-font） */
-  --code-font: "Latin Modern Mono", "Latin Modern Mono 10", "Courier New";
+  --code-font: "CMU Typewriter Text", "Latin Modern Mono", "Latin Modern Mono 10", "Courier New";
 
   /* 侧边栏字体 */
   --ui-font: #{$ui-font};

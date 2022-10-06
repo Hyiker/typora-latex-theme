@@ -52,10 +52,21 @@
   // 代码块样式
   .CodeMirror-wrap {
     padding: 10px; // FIXME 当代码太长跨页的时候好像也会有点问题
+    border-top: 2px solid #878787;
+    border-bottom: 2px solid #878787;
   }
 
   .CodeMirror-code pre {
-    font-family: var(--code-font), var(--ui-font), monospace;
+    font-family: var(--code-font), var(--ui-font);
+  }
+
+  .CodeMirror-gutters {
+    border-right: none !important;
+  }
+
+  .CodeMirror-linenumber{
+    color: #000;
+    font-family: var(--base-Latin-font);
   }
 
   // 下面是标题自动编号，初始化计数器。使用多级编号，编号后加空格模仿LaTeX
