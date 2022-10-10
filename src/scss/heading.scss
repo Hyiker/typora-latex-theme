@@ -125,7 +125,7 @@ h6.md-focus.md-heading:before {
 
 %h2-with-count {
   counter-increment: h2;
-  content: counter(h2);
+  content: counter(h2, upper-roman);
   margin-right: 2rem;
 }
 
